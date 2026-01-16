@@ -1,17 +1,16 @@
+/*
 
-// Drawable Toggle
-// Version 1.0
+  Drawable Toggle
+  Version 1.0
+  Author: Adam Maurer 
 
-// Author: Adam Maurer 
+  Description: Toggles on & off all drawables (Nulls, Falloffs, Modifiers) by changing alpha value
+  
+  Usage: This is a possibly temporary solution to not having a keyboard shortcut for toggling drawables off and on. 
+  Presently, the only way to turn them off is to go into the viewport settings and change the Drawable Visibility 
+  in a dropdown menu. That takes too much time! This script can be assigned to a shortcut key.
 
-// Description: Toggles on & off all drawables (Nulls, Falloffs, Modifiers) by changing alpha value 
-
-// Usage: This is a possibly temporary solution to not having a keyboard shortcut for toggling drawables off and on. 
-// Presently, the only way to turn them off is to go into the viewport settings and change the Drawable Visibility 
-// in a dropdown menu. That takes too much time! This script can be assigned to a shortcut key.
-
-// This script is provided "as is," without warranty of any kind, expressed or implied. 
-// In no event shall the author be held liable for any damages arising in any way from the use of this script.
+*/
 
 
 const startSelection = api.getSelection(); 
