@@ -1,4 +1,6 @@
-
+/*
+  Creates a Value2 Array with desired amount of indices and a custom value for each Index.
+*/
     const arrayXValue = 100;
     const arrayYValue = 50;
     const indexNum = 30;
