@@ -1,0 +1,25 @@
+/*
+  Creates a Null with a Value behavior on Scale, and a Number Range on the Value Behavior's Value. 
+  The number range increases the range of values you can use on the scale attribute of the null.
+*/
+
+
+const nullId = api.create("null", "CONTROL")
+const valueId = api.create("value", "Value-Scale")
+const numberRangeId = api.create("numberRange", "NumberRange-Value")
+
+
+api.connect(valueId, "id",  nullId, "scale")
+api.connect(numberRangeId, "id",  valueId, "value")
+
+api.parent(valueId, nullId)
+api.parent(numberRangeId, valueId)
+
+api.set(nullId, {"shape": 2})
+api.set(nullId, {"customColor": true})
+api.set(nullId, {"nullColor": "#00d166"})
+
+api.set(numberRangeId, {"sourceMax": 1000000})
+api.set(numberRangeId, {"value": 100})
+api.set(numberRangeId, {"max": 10000})
+
